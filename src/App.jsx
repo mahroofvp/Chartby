@@ -17,7 +17,7 @@ function App() {
 
       <div className="soon-text-div" >
         <div className="soon-text">
-        <h1>COMING SOON</h1>
+        <h1>LAUNCHING SOON</h1>
         </div>
       </div>
 
