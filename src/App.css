@@ -3,8 +3,9 @@
   height:100vh;
   background-color:#601EF9;
   background-image: url(./assets/ComingSoonBg.jpg);
-  background-size: cover;
+  background-size:100% 100%;
   background-repeat: no-repeat;
+ 
 }
 
 .white-logo-div{
@@ -56,11 +57,72 @@ color: white;
 .soon-text{
   display: flex;
   justify-content: center;
-  width: 50%;
-  height: 30%;
+  text-align: center;
+  width: auto;
+  height: auto;
 }
 
+
+/* animation */
+
+/* Container styling */
+.soon-text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Styling and animation for the <h1> text */
+.soon-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 4px solid #df11fa; /* Blinking cursor effect */
+  white-space: nowrap;
+  width:0;
+  animation: typing 3s steps(14) forwards, blink 0.5s step-end infinite;
+ 
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+/* media query */
+
 @media only screen and (max-width:334px){
+  .white-logo-div{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .soon-text-div{
+    display: flex;
+    align-items: start;
+  }
+  .soon-text{
+    margin-top: 25px;
+  }
   .white-logo-contants{
     margin-left: 20px;
     width:100px
@@ -68,19 +130,36 @@ color: white;
   .soon-text{
     font-size: small;
     letter-spacing:1px;
-    width: 85%;
+  }
+  .soon-text h1 {
+    font-size: 1rem;
   }
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (min-width:334px) and (max-width:400px){
+  .white-logo-div{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .soon-text-div{
+    display: flex;
+    align-items: start;
+  }
+  .soon-text{
+    margin-top: 25px;
+  }
   .white-logo-contants{
     margin-left: 30px;
     width:100px
   }
   .soon-text{
     font-size: 12px;
-    letter-spacing:2px;
-    width: 80%;
+    letter-spacing:1px;
+  }
+  .soon-text h1 {
+    font-size: 1.6rem;
   }
 }
 
@@ -92,10 +171,14 @@ color: white;
   .soon-text{
     font-size: 13px;
     letter-spacing:2px;
-    width: 80%;
+  
   } 
+  .soon-text h1 {
+    font-size: 1.7rem;
+    
+  }
 }
-@media only screen and (min-width:415px){
+@media only screen and (min-width:418px){
   .white-logo-contants{
     margin-left: 30px;
     width:100px
@@ -103,8 +186,10 @@ color: white;
   .soon-text{
     font-size: 15px;
     letter-spacing:2px;
-    width: 80%;
   }  
+  .soon-text h1 {
+    font-size: 2.2rem;
+  }
 }
 @media only screen and (min-width:558px){
   .white-logo-contants{
@@ -115,9 +200,10 @@ color: white;
   .soon-text{
     font-size: 20px;
     letter-spacing: 3px;
-    width: 80%;
-
   }  
+  .soon-text h1 {
+    font-size: 3rem;
+  }
 }
 
 
@@ -130,6 +216,6 @@ color: white;
   }
   .soon-text{
     font-size: 25px;
-    width: 90%;
+    width: auto;
   }
 }
