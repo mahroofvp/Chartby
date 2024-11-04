@@ -151,8 +151,11 @@ color: white;
     margin-top: 25px;
   }
   .white-logo-contants{
-    margin-left: 30px;
-    width:100px
+    width:100px;
+  }
+  .white-logo-contants > h6 {
+    color:white;
+    font-size: 6px;
   }
   .soon-text{
     font-size: 12px;
