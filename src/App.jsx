@@ -1,27 +1,33 @@
 import React from "react"
 import './App.css'
-import WhiteLogo from '../src/assets/LogoWhite.webp'
+
+import PageOne from "./pages/PageOne"
+import PageTwo from "./pages/PageTwo"
+import { Route, Routes } from "react-router-dom"
+import Navigation from "./components/Navigation"
+// import WhiteLogo from '../src/assets/LogoWhite.webp'
 function App() {
   return (
     <>
       
-    <div className="main-div" >
+      <Navigation/>
+    
 
-      <div className="white-logo-div">
+
+      {/* <div className="white-logo-div">
         <div className="white-logo-contants">
-        <img src={WhiteLogo} alt="" className="white-logo-img" />
+        <img src={''} alt="" className="white-logo-img" />
         <h3>CHARTBY</h3>
         <h6>TRADING JOURNAL</h6>
         </div>
-      </div>
+      </div> */}
+      <Routes>
+      <Route path='/' element={<PageOne/>}  />
+      <Route path='/pageTwo' element={<PageTwo/>}  />
+      </Routes>
+      
 
-      <div className="soon-text-div" >
-        <div className="soon-text">
-        <h1>LAUNCHING SOON</h1>
-        </div>
-      </div>
-
-    </div>
+ 
     
     </>
   )

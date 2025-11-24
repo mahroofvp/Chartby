@@ -1,0 +1,45 @@
+/* make sure this file is imported in PageTwo.jsx */
+:root {
+  --overlay: rgba(0,0,0,0.35); /* optional overlay for readability */
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.main-div-pagetwo {
+  position: relative;
+  min-height: 100vh;                 /* fills mobile and desktop heights */
+  width: 100%;
+  background-image: url('../assets/chartByBGimg.jpg');
+  background-size: cover;            /* scale to cover whole area */
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;                     /* center content if you want */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* optional dark overlay */
+.main-div-pagetwo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  pointer-events: none;
+}
+
+/* ensure content sits above overlay */
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* small-screen tweaks if needed */
+@media (max-height: 600px) {
+  .main-div-pagetwo { background-position: center top; }
+}

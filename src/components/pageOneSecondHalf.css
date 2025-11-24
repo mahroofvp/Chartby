@@ -1,0 +1,253 @@
+.main-div{
+  width: 100%;
+  height:100vh;
+  background-color:#1E1E1E;
+  /* background-image: url(./assets/ComingSoonBg.jpg); */
+  /* background-size:100% 100%;
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.soon-text-div{
+  letter-spacing: 8px;
+  width: 100%;
+  height: 30%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 1px;
+}
+
+ .logo-img-div{
+   margin-top: 33px;
+   height: 30%;
+   width: 60%;
+   padding: 1px;
+   display: flex;
+  }
+
+.soon-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+}
+
+
+/* animation */
+
+/* Container styling */
+.soon-text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling and animation for the <h1> text */
+.soon-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: inline-block;
+  overflow: hidden;
+  /* border-right: 4px solid #df11fa; */
+  /* white-space: nowrap;
+  width:0; */
+  /* animation: typing 3s steps(14) forwards, blink 0.5s step-end infinite; */
+}
+
+/* Typing animation */
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
+
+/* Blinking cursor animation */
+/* @keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
+
+
+
+
+/* media query */
+
+@media only screen and (max-width:334px){
+
+  .soon-text-div{
+    display: flex;
+    align-items: start;
+  }
+  .soon-text{
+    margin-top: 25px;
+  }
+  .logo-img-div{
+   margin-top: 33px;
+   /* background-color: red; */
+   padding: 1px;
+   height: 35px;
+   display: flex;
+  }
+
+  .soon-text{
+    font-size: small;
+    letter-spacing:0.1px;
+  }
+  .soon-text h1 {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width:334px) and (max-width:400px){
+ 
+  .soon-text-div{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    /* background-color: rgb(147, 92, 214); */
+  }
+  .logo-img-div{
+   margin-top: 33px;
+   /* background-color: red; */
+   padding: 1px;
+   height: 35px;
+   display: flex;
+  }
+  .soon-text{
+    margin-top: 1px;
+    /* background:  blue; */
+  }
+
+  .soon-text{
+    font-size: 10px;
+    letter-spacing:1px;
+  }
+  .soon-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width:400px){
+
+   .soon-text-div{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .soon-text-container{
+    width: 80%;
+
+  }
+  .logo-img-div{
+   margin-top: 33px;
+   /* background-color: red; */
+   padding: 1px;
+   height: 35px;
+   display: flex;
+  }
+  
+  .soon-text{
+    font-size: 13px;
+    letter-spacing:1px;
+  } 
+  .soon-text h1 {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width:418px){
+
+   .soon-text-div{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 30%;
+    /* background-color: rgb(147, 92, 214); */
+  }
+  
+
+  .logo-img-div{
+   margin-top: 33px;
+   /* background-color: rgb(209, 152, 46); */
+   padding: 1px;
+   height: 35px;
+   display: flex;
+  }
+  .soon-text-container{
+    height: auto;
+    width: 80%;
+    /* background-color: rgb(182, 37, 37); */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .soon-text{
+    font-size: 15px;
+    letter-spacing:2px;
+  }  
+  .soon-text h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width:558px){
+ 
+  .soon-text{
+    font-size: 20px;
+    letter-spacing: 3px;
+     display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+  }  
+  
+   .soon-text-container{
+    width: 70%;
+  }
+  .logo-img-div{
+   margin-top: 33px;
+   /* background-color: rgb(92, 23, 153); */
+   padding: 1px;
+   height: 35px;
+   display: flex;
+  }
+  .soon-text h1 {
+    font-size: 2.2rem;
+  }
+}
+
+
+@media only screen and (min-width:700px){
+ 
+  .soon-text-div{
+    width: 100%;
+  }
+   .soon-text-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .logo-img-div{
+   margin-top: 33px;
+   /* background-color: rgb(234, 255, 0); */
+   padding: 1px;
+   height: 60px;
+   display: flex;
+  }
+  .soon-text{
+    font-size: 25px;
+    width: auto;
+  }
+}
